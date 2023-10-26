@@ -3,29 +3,29 @@
 }
 
 :root {
-    --color-calendar-graph-day-L1-bg: #e9b1fa !important;
-    --color-calendar-graph-day-L2-bg: #d078ff !important;
-    --color-calendar-graph-day-L3-bg: #c352ff !important;
-    --color-calendar-graph-day-L4-bg: #9100ff !important;
-    --color-calendar-graph-day-bg: #8c8dab3e !important;
-    --color-accent-fg: #c352ff !important;
-    --color-fg-default: #ccccd9 !important;
-    --color-success-fg: #c352ff !important;
-    --color-success-emphasis: #c352ff !important;
-    --color-border-default: #2e2f45 !important;
-    --color-canvas-default: #2e2f45 !important;
-    --color-fg-muted: #8585a1 !important;
-    --color-timeline-badge-bg: #51516e !important;
-    --color-border-muted: #51516e !important;
+      --color-calendar-graph-day-L1-bg: #e9b1fa !important;
+      --color-calendar-graph-day-L2-bg: #d078ff !important;
+      --color-calendar-graph-day-L3-bg: #c352ff !important;
+      --color-calendar-graph-day-L4-bg: #9100ff !important;
+      --color-calendar-graph-day-bg: #8c8dab3e !important;
+      --color-accent-fg: #c352ff !important;
+      --color-fg-default: #ccccd9 !important;
+      --color-success-fg: #c352ff !important;
+      --color-success-emphasis: #c352ff !important;
+      --color-border-default: #2e2f45 !important;
+      --color-canvas-default: #2e2f45 !important;
+      --color-fg-muted: #8585a1 !important;
+      --color-timeline-badge-bg: #51516e !important;
+      --color-border-muted: #51516e !important;
 
-    --color-canvas-inset: #2e2f45 !important;
-    --color-canvas-overlay: #2e2f45 !important;
+      --color-canvas-inset: #2e2f45 !important;
+      --color-canvas-overlay: #2e2f45 !important;
 
-    --color-accent-emphasis: #d078ff !important;
-    --color-canvas-subtle: #2e2f45 !important;
-    --color-btn-bg: #e9b1fa !important;
+      --color-accent-emphasis: #d078ff !important;
+      --color-canvas-subtle: #2e2f45 !important;
+      --color-btn-bg: #e9b1fa !important;
 
-    --borderWidth-thin: max(2px, 0.0625rem);
+      --borderWidth-thin: max(2px, 0.0625rem);
 }
 
 body {
@@ -33,9 +33,9 @@ body {
 }
 
 .js-highlight-blob {
-    fill: #e3bfff !important;
-    stroke: #e3bfff !important;
-}
+      fill: #e3bfff !important;
+      stroke: #e3bfff !important;
+   }
 
 .Progress-item {
    background-color: #c352ff !important;
@@ -69,4 +69,26 @@ body {
 .vcard-names .p-name {
    display: flex !important;
    align-items: center !important;
+}
+
+.readme-hider__btn {
+   pointer-events: auto;
+   position: absolute;
+   cursor: pointer;
+   width: 20px;
+   height: 20px;
+   fill: #e9b1fa;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 2px;
+   left: 2px;
+}
+
+.readme-hider__btn.hovered {
+   fill: #ca93db !important;
+}
+
+.readme-hider__btn.active {
+   transform: rotate(180deg);
 }
