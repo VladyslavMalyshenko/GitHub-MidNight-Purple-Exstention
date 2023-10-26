@@ -1,0 +1,72 @@
+* {
+   transition: .3s !important;
+}
+
+:root {
+    --color-calendar-graph-day-L1-bg: #e9b1fa !important;
+    --color-calendar-graph-day-L2-bg: #d078ff !important;
+    --color-calendar-graph-day-L3-bg: #c352ff !important;
+    --color-calendar-graph-day-L4-bg: #9100ff !important;
+    --color-calendar-graph-day-bg: #8c8dab3e !important;
+    --color-accent-fg: #c352ff !important;
+    --color-fg-default: #ccccd9 !important;
+    --color-success-fg: #c352ff !important;
+    --color-success-emphasis: #c352ff !important;
+    --color-border-default: #2e2f45 !important;
+    --color-canvas-default: #2e2f45 !important;
+    --color-fg-muted: #8585a1 !important;
+    --color-timeline-badge-bg: #51516e !important;
+    --color-border-muted: #51516e !important;
+
+    --color-canvas-inset: #2e2f45 !important;
+    --color-canvas-overlay: #2e2f45 !important;
+
+    --color-accent-emphasis: #d078ff !important;
+    --color-canvas-subtle: #2e2f45 !important;
+    --color-btn-bg: #e9b1fa !important;
+
+    --borderWidth-thin: max(2px, 0.0625rem);
+}
+
+body {
+   color: #ccccd9 !important;
+}
+
+.js-highlight-blob {
+    fill: #e3bfff !important;
+    stroke: #e3bfff !important;
+}
+
+.Progress-item {
+   background-color: #c352ff !important;
+}
+
+.application-main {
+   background-color: #242538 !important;
+}
+
+.Box-body {
+   background-color: #2e2f45 !important;
+}
+
+.js-profile-timeline-year-list {
+   border-radius: 6px;
+}
+
+.btn {
+   background-color:#e9b1fa !important;
+}
+
+.btn:hover {
+   background-color: #ca93db !important;
+}
+
+.p-name {
+   display: flex !important;
+   align-items: center !important;
+}
+
+.vcard-names .p-name {
+   display: flex !important;
+   align-items: center !important;
+}
