@@ -1,94 +1,158 @@
 * {
-   transition: .3s !important;
+  transition: 0.3s !important;
 }
 
 :root {
-      --color-calendar-graph-day-L1-bg: #e9b1fa !important;
-      --color-calendar-graph-day-L2-bg: #d078ff !important;
-      --color-calendar-graph-day-L3-bg: #c352ff !important;
-      --color-calendar-graph-day-L4-bg: #9100ff !important;
-      --color-calendar-graph-day-bg: #8c8dab3e !important;
-      --color-accent-fg: #c352ff !important;
-      --color-fg-default: #ccccd9 !important;
-      --color-success-fg: #c352ff !important;
-      --color-success-emphasis: #c352ff !important;
-      --color-border-default: #2e2f45 !important;
-      --color-canvas-default: #2e2f45 !important;
-      --color-fg-muted: #8585a1 !important;
-      --color-timeline-badge-bg: #51516e !important;
-      --color-border-muted: #51516e !important;
+  --color-calendar-graph-day-L1-bg: #e9b1fa !important;
+  --color-calendar-graph-day-L2-bg: #d078ff !important;
+  --color-calendar-graph-day-L3-bg: #c352ff !important;
+  --color-calendar-graph-day-L4-bg: #9100ff !important;
+  --color-calendar-graph-day-bg: #8c8dab3e !important;
 
-      --color-canvas-inset: #2e2f45 !important;
-      --color-canvas-overlay: #2e2f45 !important;
+  --color-accent-fg: #c352ff !important;
+  --fgColor-accent: #c352ff !important;
 
-      --color-accent-emphasis: #d078ff !important;
-      --color-canvas-subtle: #2e2f45 !important;
-      --color-btn-bg: #e9b1fa !important;
+  --fgColor-link: #c352ff !important;
 
-      --borderWidth-thin: max(2px, 0.0625rem);
+  --color-fg-default: #ccccd9 !important;
+  --fgColor-default: #ccccd9 !important;
+
+  --color-success-fg: #c352ff !important;
+  --color-success-emphasis: #c352ff !important;
+  --color-border-default: #2e2f45 !important;
+  --color-canvas-default: #2e2f45 !important;
+
+  --color-fg-muted: #8585a1 !important;
+  --bgColor-muted: #8585a1 !important;
+  --button-default-fgColor-rest: #8585a1 !important;
+
+  --color-timeline-badge-bg: #51516e !important;
+  --color-border-muted: #51516e !important;
+  --borderColor-default: #51516e !important;
+  --button-default-borderColor-rest: #51516e !important;
+  --button-default-bgColor-hover: #51516e !important;
+
+  --color-canvas-inset: #2e2f45 !important;
+  --color-canvas-overlay: #2e2f45 !important;
+  --button-default-bgColor-rest: #2e2f45 !important;
+
+  --color-accent-emphasis: #d078ff !important;
+  --bgColor-accent-emphasis: #d078ff !important;
+  --control-transparent-bgColor-hover: #d078ff !important;
+
+  --color-canvas-subtle: #2e2f45 !important;
+  --bgColor-default: #2e2f45 !important;
+  --bgColor-inset: #2e2f45 !important;
+  --overlay-bgColor: #2e2f45 !important;
+  --color-btn-bg: #e9b1fa !important;
+
+  --borderWidth-thin: max(2px, 0.0625rem);
 }
 
 body {
-   color: #ccccd9 !important;
+  color: #ccccd9 !important;
 }
 
 .js-highlight-blob {
-      fill: #e3bfff !important;
-      stroke: #e3bfff !important;
-   }
+  fill: #e3bfff !important;
+  stroke: #e3bfff !important;
+}
 
 .Progress-item {
-   background-color: #c352ff !important;
+  background-color: #c352ff !important;
 }
 
 .application-main {
-   background-color: #242538 !important;
+  background-color: #242538 !important;
 }
 
 .Box-body {
-   background-color: #2e2f45 !important;
+  background-color: #2e2f45 !important;
 }
 
 .js-profile-timeline-year-list {
-   border-radius: 6px;
+  border-radius: 6px;
 }
 
 .btn {
-   background-color:#e9b1fa !important;
+  background-color: #e9b1fa !important;
 }
 
 .btn:hover {
-   background-color: #ca93db !important;
+  background-color: #ca93db !important;
 }
 
 .p-name {
-   display: flex !important;
-   align-items: center !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .vcard-names .p-name {
-   display: flex !important;
-   align-items: center !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .readme-hider__btn {
-   pointer-events: auto;
-   position: absolute;
-   cursor: pointer;
-   width: 20px;
-   height: 20px;
-   fill: #e9b1fa;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   top: 2px;
-   left: 2px;
+  pointer-events: auto;
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  fill: #e9b1fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2px;
+  left: 2px;
 }
 
 .readme-hider__btn.hovered {
-   fill: #ca93db !important;
+  fill: #ca93db !important;
 }
 
 .readme-hider__btn.active {
-   transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#user-profile-frame div .Box {
+  border-radius: 0;
+  border: none;
+}
+
+#user-profile-frame div .Box .Box-body {
+  background-color: var(--bgColor-default);
+  border-color: var(--borderColor-default);
+  border-radius: var(--borderRadius-medium);
+  border-style: solid;
+  border-width: var(--borderWidth-thin);
+}
+
+.user-status-circle-badge-container.user-status-editable:hover
+  .user-status-circle-badge,
+.user-status-circle-badge-container.user-status-has-content:hover
+  .user-status-circle-badge,
+.user-status-circle-badge-container:focus-within .user-status-circle-badge {
+  width: max-content;
+}
+
+.user-status-circle-badge-container.user-status-editable:hover
+  .user-status-message-wrapper.f6.min-width-0.ws-normal,
+.user-status-circle-badge-container.user-status-has-content:hover
+  .user-status-message-wrapper.f6.min-width-0.ws-normal,
+.user-status-circle-badge-container:focus-within
+  .user-status-message-wrapper.f6.min-width-0.ws-normal {
+  width: max-content;
+}
+
+.user-status-circle-badge-container.user-status-editable:hover
+  .user-status-message-wrapper.f6.min-width-0.ws-normal
+  .css-truncate,
+.user-status-circle-badge-container.user-status-has-content:hover
+  .user-status-message-wrapper.f6.min-width-0.ws-normal
+  .css-truncate,
+.user-status-circle-badge-container:focus-within
+  .user-status-message-wrapper.f6.min-width-0.ws-normal
+  .css-truncate {
+  display: inline;
+  width: max-content;
 }
